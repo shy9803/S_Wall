@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- SEO -->
+  <meta name="Date" content="2025-02-09T17:00:30+09:00">
+  <meta http-equiv="X-UA=Compatible" content="IE=edge">
+  <meta http-equiv="Subject" content="주거공간">
+  <meta name="author" content="서울벽지">
+  <meta name="keywords" content="서울벽지, 주거공간, 인테리어">
+  <meta name="description" content="환경을 생각하는 기술력으로 만드는 생활공간 제공">
+  <meta name="robots" content="index, follow">
+  <title>서울벽지</title>
+  <!-- favicon 삽입 -->
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+
+  <!-- 구글 웹 폰트 (나눔 고딕) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+
+  <!-- 아이콘 폰트 (FontAwesome CDN) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+  <!-- css 초기화 -->
+  <link rel="stylesheet" href="./css/reset.css" type="text/css">
+
+  <!-- 공통 서식 common.css -->
+  <link rel="stylesheet" href="./css/common.css" type="text/css">
+  
+  <!-- 메인 콘텐츠 서식 -->
+  <link rel="stylesheet" href="./css/main.css" type="text/css">
+  
+  <!-- 2. tablet버전 서식 -->
+  <link rel="stylesheet" href="./css/tablet.css" type="text/css">
+  
+  <!-- 3. mobile버전 서식 -->
+  <link rel="stylesheet" href="./css/mobile.css" type="text/css">
+
+  <!-- flexslide서식 -->
+  <link rel="stylesheet" href="./css/flexslider.css" type="text/css">
+
+  <!-- jQuery 라이브러리 -->
+  <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+  <!-- flexslide script -->
+  <script src="./script/jquery.flexslider.js"></script>
+
+</head>
+<body>
+  <input type="checkbox" id="toggle">
+  <!-- 헤더 영역 시작 -->
+  <header>
+    <div class="header_inner">
+      <h1>
+        <a href="index.html" title="메인페이지로 바로가기">
+          <img src="./images/logo.svg" alt="로고">
+        </a>
+      </h1>
+
+      <!-- 오른쪽 상단 내비게이션 Local Navigation Bar -->
+      <nav class="lnb">
+        <ul>
+          <li><a href="login.html" title="로그인">로그인</a></li>
+          <li><a href="signup.html" title="회원가입">회원가입</a></li>
+          <li>
+            <input type="search" id="sh" placeholder="검색어 입력">
+            <label for="sh"><i class="fas fa-search"></i></label>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- 모바일, 태블릿에서 보여주기 위한 메뉴, 버튼 -->
+      <label for="toggle" id="t_btn"><i class="fas fa-bars"></i></label>
+      
+      <i class="fas fa-search m_search"></i>
+    </div>
+
+    <!-- 메인 메뉴 2단 내비게이션 -->
+    <nav class="gnb">
+      <label for="toggle"><i class="fas fa-times"></i></label>
+      <ul>
+        <li>
+          <a href="collection.html" title="컬렉션">컬렉션<i class="fas fa-angle-down"></i></a>
+          <ul class="sub">
+            <li><a href="collection.html" title="제품군 모아보기">제품군 모아보기</a></li>
+            <li><a href="premium.html" title="프리미엄벽지">프리미엄벽지</a></li>
+            <li><a href="silk.html" title="실크벽지">실크벽지</a></li>
+            <li><a href="cozy.html" title="합지벽지">합지벽지</a></li>
+            <li><a href="nonfire.html" title="방염벽지">방염벽지</a></li>
+            <li><a href="myprod.html" title="나만의 제품찾기">나만의 제품찾기</a></li>
+            <li><a href="download.html" title="다운로드">다운로드</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="service.html" title="고객서비스">고객서비스<i class="fas fa-angle-down"></i></a>
+          <ul class="sub">
+            <li><a href="tip.html" title="스타일링 팁">스타일링 팁</a></li>
+            <li><a href="service.html" title="고객상담">고객상담</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="promotion.html" title="홍보">홍보<i class="fas fa-angle-down"></i></a>
+          <ul class="sub">
+            <li><a href="promotion.html" title="홍보">홍보</a></li>
+            <li><a href="notice.html" title="공지사항">공지사항</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="wallpaper.html" title="서울벽지">서울벽지<i class="fas fa-angle-down"></i></a>
+          <ul class="sub">
+            <li><a href="wallpaper.html" title="기업소개">기업소개</a></li>
+            <li><a href="research.html" title="혁신연구 & 디자인개발">혁신연구 &amp; 디자인개발</a></li>
+            <li><a href="location.html" title="위치안내">위치안내</a></li>
+            <li><a href="company.html" title="고객기업/해외수출">고객기업/해외수출</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 메인 콘텐츠 시작 -->
+  <main>
+    <article class="slide">
+      <h2>메인 슬라이드</h2>
+      <!-- 반응형 슬라이드 -->
+      <div class="flexslider">
+        <ul class="slides">
+          <li>
+            <img src="./images/visual1.jpg" alt="메인 이미지1">
+          </li>
+          <li>
+            <img src="./images/visual2.jpg" alt="메인 이미지2">
+          </li>
+          <li>
+            <img src="./images/visual3.jpg" alt="메인 이미지3">
+          </li>
+          <li>
+            <img src="./images/visual4.jpg" alt="메인 이미지4">
+          </li>
+        </ul>
+      </div>
+    </article>
+
+    <section class="con">
+      <h2>메인 콘텐츠 영역</h2>
+      <article class="collect"> <!-- 컬렉션 제품군 -->
+        <h2>컬렉션</h2>
+        <a href="#" title="컬렉션">
+          <img src="./images/collection.png" alt="컬렉션">
+        </a>
+      </article>
+
+      <article class="ad_p"> <!-- 홍보사진(잡지/드라마 등) -->
+        <h2>홍보사진</h2>
+        <a href="#" title="홍보">
+          <img src="./images/promotion_poster.png" alt="드라마 포스터">
+        </a>
+      </article>
+
+      <article class="ad_b"> <!-- 홍보사진(잡지/드라마 등) -->
+        <h2>홍보사진</h2>
+        <a href="#" title="홍보">
+          <img src="./images/promotion.jpg" alt="잡지 표지">
+        </a>
+      </article>
+
+      <article class="notice">
+        <h2 class="title">Notice <i class="fas fa-plus"></i></h2>
+        <ul> <!-- 공지 - 일반+공지 -->
+          <li><a href="a.html" title="내용">2025-2026 신제품 플레인 출시</a></li>
+          <li><a href="a.html" title="내용">2024 건강주택대상 수상</a></li>
+          <li><a href="a.html" title="내용">2024-2026 신제품 옥수수가 출시</a></li>
+          <li><a href="a.html" title="내용">2024-2026 신제품 레노 출시</a></li>
+        </ul>
+      </article>
+
+      <article class="banner b1"> <!-- 스타일링 팁 -->
+        <h2>배너</h2>
+        <a href="#" title="이미지 배너광고">
+          <img src="./images/product1.jpg" alt="신제품 광고">
+        </a>
+      </article>
+
+      <article class="banner b2"> <!-- 스타일링 팁 -->
+        <h2>배너</h2>
+        <a href="#" title="이미지 배너광고">
+          <img src="./images/product2.jpg" alt="신제품 광고">
+        </a>
+      </article>
+    </section>
+  </main>
+
+  <!-- 푸터 영역 시작 -->
+  <footer>
+    <div class="f_inner">
+      <div id="f_logo">
+        <a href="#" title="메인페이지로">
+          <img src="./images/logo_w.svg" alt="푸터로고">
+        </a>
+      </div>
+      
+      <!-- 푸터 내비게이션 -->
+      <nav class="f_lnb">
+        <ul>
+          <li>컬렉션
+            <ul class="f_sub">
+              <li><a href="collection.html" title="제품군 모아보기">제품군 모아보기</a></li>
+              <li><a href="premium.html" title="프리미엄벽지">프리미엄벽지</a></li>
+              <li><a href="silk.html" title="실크벽지">실크벽지</a></li>
+              <li><a href="cozy.html" title="합지벽지">합지벽지</a></li>
+              <li><a href="nonfire.html" title="방염벽지">방염벽지</a></li>
+              <li><a href="myprod.html" title="나만의 제품찾기">나만의 제품찾기</a></li>
+              <li><a href="download.html" title="다운로드">다운로드</a></li>
+            </ul>
+          </li>
+          <li>고객서비스
+            <ul class="f_sub">
+              <li><a href="tip.html" title="스타일링 팁">스타일링 팁</a></li>
+              <li><a href="service.html" title="고객상담">고객상담</a></li>
+            </ul>
+          </li>
+          <li>홍보
+            <ul class="f_sub">
+              <li><a href="promotion.html" title="홍보">홍보</a></li>
+              <li><a href="notice.html" title="공지사항">공지사항</a></li>
+            </ul>
+          </li>
+          <li>서울벽지
+            <ul class="f_sub">
+              <li><a href="wallpaper.html" title="기업소개">기업소개</a></li>
+              <li><a href="research.html" title="혁신연구 & 디자인개발">혁신연구 &amp; 디자인개발</a></li>
+              <li><a href="location.html" title="위치안내">위치안내</a></li>
+              <li><a href="company.html" title="고객기업/해외수출">고객기업/해외수출</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+  
+      <address class="addr">
+        <ul>
+          <li>본사</li>
+          <li>Address<span>경기도 양주시 칠봉산로 286번길 77 (봉양동)</span></li>
+          <li>Tel<a href="tel 0318479119">031-847-9119</a></li>
+        </ul>
+        <ul>
+          <li>서울사무실</li>
+          <li>Address<span>서울시 종로구 동숭길 117 (동숭동) 한석빌딩 4F</span></li>
+          <li>Tel<a href="tel 027635100">02-763-5100</a></li>
+        </ul>
+      </address>
+
+      <!-- SNS -->
+      <nav class="sns">
+        <ul>
+          <li><a href="i.html" title="인스타그램"><img src="./images/footer_instar.png" alt="인스타그램 이미지"></a></li>
+          <li><a href="b.html" title="블로그"><img src="./images/footer_blog.png" alt="블로그 이미지"></a></li>
+        </ul>
+      </nav>
+  
+      <!-- 저작권 -->
+      <div class="copy">
+        <p>Copyright &copy; SEOUL WALLPAPER. All rights reserved</p>
+        <a href="#" title="개인정보취급방침">개인정보취급방침</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./script/submenu.js"></script>
+
+  <!-- flexslider JS -->
+  <script>
+    // html 문서가 로딩이 끝나면 슬라이드를 동작하게 한다.
+    $(window).load(function() {
+      $('.flexslider').flexslider({
+        animation: "slide"
+      });
+    });
+
+    /*
+    // brand story에 마우스 오버시 이미지 변경
+    const brand_img = document.getElementById('bs_img');
+
+    brand_img.addEventListener('mouseover', function() {
+      // window.alert('클릭');
+      this.src = './images/mbn0202ov.png';
+    });
+    // 마우스 아웃시 이미지 다시 원래대로 변경
+    brand_img.addEventListener('mouseout', function() {
+      this.src = './images/mbn0202.png';
+    });
+    */
+  </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+/* 2. Tablet 해상도 영역일 경우 변경되는 서식 */
+/* @media screen and (해상도 설정) {} */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  /* body {background-color: #0f0;} */
+
+  /* 헤더 */
+  .header_inner, .gnb > ul, .f_lnb, address, .sns {
+    width: 100%;
+  }
+
+  h1 {
+    margin-left: 1.5%;
+  }
+
+  #t_btn {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 74px;
+    font-size: 2rem;
+  }
+  #t_btn > i.fa-bars {
+    transform: translateY(-2px);
+  }
+
+  .gnb > ul {
+    margin-right: 3.8%;
+    transform: translateY(-5px);
+    width: 94%;
+  }
+  .gnb > ul > li {
+    margin: 0 2.4%;
+    text-align: center;
+  }
+
+  #toggle:checked + header > .gnb {
+    height: 250px;
+  }
+
+  /* 푸터 서식 */
+  footer {
+    overflow: hidden;
+  }
+
+  .sns > ul {
+    justify-content: center;
+  }
+
+  .addr {
+    display: block;
+  }
+  .addr > ul {
+    margin: 15px;
+  }
+}

@@ -1,0 +1,215 @@
+@charset "UTF-8";
+/* common.css */
+
+/* 공통 */
+body {
+  font-family: "Nanum Gothic", arial, serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+  color: #333;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+label[for=toggle], i.fa-search {
+  cursor: pointer;
+}
+
+/* 체크 박스 숨기기 */
+#toggle {
+  display: none;
+}
+
+/* PC버전 우선 */
+/* 헤더 서식 */
+header {
+  width: 100%;
+  height: 112px;
+  position: relative;
+  z-index: 1000;
+}
+.header_inner {
+  width: 1200px;
+  height: 72px;
+  margin: 0 auto;
+  position: relative;
+}
+
+h1 {
+  transform: translateY(20px);
+  width: 196px;
+}
+
+.lnb {
+  position: absolute;
+  top: 14px;
+  right: 10px;
+}
+.lnb > ul {
+  display: flex;
+}
+.lnb a {
+  text-transform: uppercase;
+  font-size: 13px;
+  border-right: 1px solid #ccc;
+  padding: 0px 8px;
+  line-height: 22px;
+}
+.lnb li:nth-child(2) a {
+  border-right: none;
+}
+
+/* 검색 박스 서식 */
+#sh {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  height: 24px;
+  text-indent: 5px;
+}
+label i.fa-search {
+  font-size: 18px;
+  transform: translate(-22px, 2px);
+}
+
+/* pc버전에서는 닫기(X), 검색버튼 숨기기 */
+label[for=toggle], i.m_search {
+  display: none;
+}
+
+/* gnb 서식 - 2단 내비게이션 */
+.gnb {
+  width: 100%;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.9);
+  overflow: hidden;
+  transition: 0.5s;
+}
+.gnb:hover {
+  height: 260px;
+}
+
+.gnb > ul {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: right;
+}
+.gnb > ul > li {
+  margin: 0 3.4%;
+  text-align: center;
+  position: relative;
+}
+.gnb > ul > li > a {
+  font-size: 16px;
+  padding: 0px 6px;
+  display: block;
+  line-height: 40px;
+}
+
+.gnb > ul > li > a:hover {
+  color: #f90;
+}
+.gnb > ul > li > a::after {
+  display: block;
+  content: '';
+  height: 2px;
+  background-color: #f90;
+  transform: translateY(-3px) scale(0);
+  transition: 0.3s;
+}
+.gnb > ul > li > a:hover::after {
+  transform: translateY(-3px) scale(1);
+}
+
+/* 서브메뉴 표시하기 위한 화살표 */
+.gnb .fa-angle-down {
+  display: none;
+}
+
+/* 서브메뉴 서식 */
+.sub a {
+  line-height: 30px;
+  display: block;
+  font-size: 13px;
+}
+.sub a:hover {
+  text-decoration: underline;
+}
+
+/* 푸터 서식 */
+footer {
+  width: 100%;
+  padding: 10px 0px;
+  background: rgb(146, 146, 146);
+  border-top: 1px solid #dadada;
+}
+
+.f_inner {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+#f_logo {
+  float: left;
+  margin: 5px 15px;
+}
+
+.f_lnb > ul {
+  display: flex;
+  justify-content: left;
+}
+.f_lnb > ul > li {
+  margin: 25px;
+}
+.f_lnb > ul li {
+  color: #222;
+  font-weight: bold;
+}
+#f_logo::after, .f_lnb::after {
+  content: '';
+  clear: both;
+  display: block;
+}
+.f_sub {
+  margin-top: 10px;
+}
+.f_sub > li {
+  margin: 8px 0;
+}
+
+.addr {
+  display: flex;
+}
+.addr > ul {
+  margin: 0 15px;
+}
+.addr > ul > li {
+  line-height: 20px;
+}
+.addr > ul > li:first-child {
+  font-weight: bold;
+}
+.addr li > span, .addr li > a {
+  margin-left: 10px;
+}
+
+.sns > ul {
+  display: flex;
+  justify-content: right;
+}
+.sns > ul > li {
+  margin: 0 5px;
+}
+
+.copy {
+  display: flex;
+}
+.copy > p {
+  margin: 0 15px;
+}
+.copy > a {
+  font-weight: bold;
+}

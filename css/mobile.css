@@ -1,0 +1,223 @@
+@charset "UTF-8";
+
+/* 3. Mobile 해상도 영역일 경우 변경되는 서식 */
+/* @media screen and (해상도 설정) {} */
+@media screen and (max-width: 767px) {
+  /* 헤더 */
+  /* 모바일 영역에서 가로 크기를 100%로 채워줌 */
+  header {
+    height: 76px;
+  }
+  .header_inner, .gnb > ul, .f_lnb, address, .sns {
+    width: 100%;
+  }
+  
+  header {
+    position: relative; /* 토글버튼, 검색버튼을 기준잡기 위해*/
+    width: 100%;
+  }
+  .header_inner {
+    height: 70px;
+    box-shadow: 0px 0px 3px rgb(63, 63, 63);
+    background: #fff;
+  }
+
+  h1 {
+    width: 100%;
+    text-align: center;
+    transform: translateY(10px);
+  }
+  h1 img {
+    width: 130px;
+    padding-top: 10px;
+  }
+
+  /* 모바일에서 보여지는 토글버튼, 검색버튼 공통서식 */
+  #t_btn, #t_btn + i.fa-search {
+    position: absolute;
+    top: 21px;
+    display: block;
+    color: #333;
+    font-size: 2rem;
+  }
+  /* 좌측 토글버튼 */
+  #t_btn {
+    left: 14px;
+  }
+
+  /* 우측 검색버튼 */
+  #t_btn + i.fa-search {
+    right: 14px;
+  }
+
+  /* 내비게이션 */
+  .gnb {
+    /* display: none; */
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0 ,0.8);
+    position: fixed;
+    top: 0;
+    left: /*0px;*/ -100%;
+    z-index: 10000;
+    transition: 0.5s;
+  }
+  .gnb:hover {
+    height: 100%;
+  }
+
+  .gnb li {
+    border-bottom: 1px solid #fff;
+  }
+  .gnb > ul {
+    /*display: flex; /*가로*/
+    flex-direction: column;
+    padding-top: 120px;
+  }
+  .gnb > ul > li {
+    text-align: left;
+    padding: 14px 0;
+  }
+  .gnb > ul > li a {
+    color: #fff;
+    font-size: 1rem; /* 1rem = 16px */
+  }
+
+  .gnb > ul > li > a::after {
+    display: none;
+  }
+
+  /* 서브 */
+  .sub {
+    text-indent: 10px;
+    display: none;
+  }
+  .sub > li {
+    padding: 10px;
+  }
+
+  /* 검색박스 */
+  #sh, #sh + label {
+    position: absolute;
+    top: -530px;
+    z-index: 10001;
+  }
+  #sh {
+    height: 30px;
+    left: 25%;
+    display: block;
+  }
+  /* 검색버튼 */
+  #sh + label {
+    color: #fff;
+    left: 78%;
+  }
+  #sh + label i {
+    font-size: 1.6rem;
+  }
+  
+  /* 닫기 버튼 */
+  .gnb > label {
+    display: block;
+  }
+  .fa-times {
+    color: #fff;
+    font-size: 2rem;
+    position: absolute;
+    right: 4%;
+    top: 21px;
+  }
+
+  /* 메인 메뉴의 서브 메뉴 있다는 화살표 표시 */
+  .gnb .fa-angle-down {
+    display: block;
+    color: #fff;
+    font-size: 1.2rem;
+    float: right;
+    /* transform: translateY(12px); */
+    padding-top: 10px;
+  }
+
+  /* 헤더 상단메뉴 login... */
+  .lnb {
+    /* position: absolute; */
+    position: fixed;
+    width: 100%;
+    top: 600px;
+    left: -100%;
+    z-index: 10001;
+    transition: 0.5s;
+  }
+
+  .lnb ul {
+    display: block;
+    text-align: center;
+  }
+  .lnb ul > li {
+    display: inline-block;
+    width: 48%;
+    background: rgb(107, 107, 107);
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  .lnb ul > li a {
+    display: block;
+    color: #fff;
+    border-right: none;
+    line-height: 300%;
+  }
+
+  /* toggle버튼 클릭시 header 자손 */
+  #toggle:checked + header .gnb {
+    left: 0px;
+  }
+  #toggle:checked + header > .header_inner .lnb {
+    left: 0px;
+  }
+
+  /* 서브메뉴 이벤트 */
+  .active {
+    display: block;
+  }
+  /* 서브가 보일 떄 아이콘의 방향을 반대로 회전 */
+  .rotate {
+    transform: rotate(180deg) translate(0px, -8px);
+  }
+
+  /* 푸터 */
+  footer {
+    overflow: hidden;
+  }
+  #f_logo {
+    float: none;
+  }
+
+  .f_lnb > ul {
+    flex-wrap: wrap; /* 콘텐츠 내용이 한 줄을 벗어나면 다음 줄로 내리기 */
+  }
+  .f_lnb > ul a {
+    line-height: 30px;
+    display: block;
+  }
+  .f_lnb > ul > li {
+    margin: 25px 1.1%;
+  }
+  .f_sub > li {
+    margin: 0;
+  }
+
+  .sns {
+    padding: 20px 0;
+  }
+  .sns > ul {
+    display: flex;
+    justify-content: left;
+  }
+  .addr {
+    display: block;
+  }
+
+  .copy {
+    width: 100%;
+  }
+}
